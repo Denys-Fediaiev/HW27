@@ -1,0 +1,25 @@
+#!/bin/bash
+echo "This script reads from users coefficients of square equations and calculates the roots of this equation"
+echo "enter First number"
+read x
+echo "enter Second number"
+read y
+echo "enter Third number" 
+read z
+(( disсriminant=($y*$y)-(4*$x*$z) ))
+
+if [["$discriminant" -eq 0]]
+then
+mkdir one
+fi
+
+if [["$discriminant" -gt 0]]
+then
+mkdir one
+mkdir two
+fi
+
+if [["$discriminant" -lt 0]]
+then
+echo "there is nothing what i can do"
+fi
